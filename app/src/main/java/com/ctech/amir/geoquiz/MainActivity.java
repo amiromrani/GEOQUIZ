@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                         R.string.correct_toast,
                         Toast.LENGTH_SHORT).show();
             }
-        });
+        });h
 
         mFalseButton = (Button) findViewById(R.id.false_button);
         mFalseButton.setOnClickListener(new View.OnClickListener() {
