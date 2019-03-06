@@ -1,8 +1,14 @@
-<resources>
+<str>
     <string name="app_name">GeoQuiz</string>
-    <string name="question_text">i like tacos</string>
     <string name="true_button">true</string>
     <string name="false_button">false</string>
+    <string name="next_button">Next</string>
     <string name="correct_toast">correct</string>
-    <string name="incorrect_toast">incorrect</resources>
+    <string name="incorrect_toast">incorrect</string >
+    <string name="question_australia">canbera is the capital of australia.</string>
+    <string name="question_oceans">The pasific ocean is larger than the atlantic ocean.</string>
+    <string name="question_mideast">The seuz cnal connects the red sea and the indian ocean.</string>
+    <string name="question_africa">The source of the Nile river is in Egypt.</string>
+    <string name="question_america">The amazon river is the longest river in the Americas.</string>
+    <string name="question_asia">Lake Baikal is the world\'s oldest and deepestfreshwaterlake. </string>
 </resources>
