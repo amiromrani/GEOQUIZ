@@ -1,4 +1,4 @@
-<str>
+<resources>
     <string name="app_name">GeoQuiz</string>
     <string name="true_button">true</string>
     <string name="false_button">false</string>
