@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         boolean answerIsTrue = mQuestionBank [mCurrentIndex].isAnswerTrue();
         int messageResourceId = 0;
         if (userPressedTrue == answerIsTrue){
-        messageResourceId = R.string.correct_toast
+        messageResourceId = R.string.correct_toast;
         } else {
-            messageResourceId = R.string.incorrect_toast
+            messageResourceId = R.string.incorrect_toast;
         }
         Toast.makeText(this, messageResourceId, Toast.LENGTH_SHORT).show();
     }
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         mTrueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               checkAnswer(true)
+               checkAnswer(true);
             }
         });
 
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
     //updateQuestion capsolation
     private void updateQuestion () {
         int questionResourceId = mQuestionBank[mCurrentIndex].getTextRedId();
-        mQuestionTextView.setText(questionResourceId)
+        mQuestionTextView.setText(questionResourceId);
     }
 
 
