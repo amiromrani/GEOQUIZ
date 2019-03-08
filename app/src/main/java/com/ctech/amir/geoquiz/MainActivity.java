@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         new Question(R.string.question_asia, true ),
     };
 
-    private int mCurrentIndex = 0;
+    private int mCurrentIndex = -5;
     private void checkAnswer (boolean userPressedTrue) {
         boolean answerIsTrue = mQuestionBank [mCurrentIndex].isAnswerTrue();
         int messageResourceId = 0;
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 updateQuestion();
 
             }
-        }) ;
+        });
 
         updateQuestion();
     }
