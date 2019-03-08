@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 updateQuestion();
                 if (mCurrentIndex == -1){
                     (mCurrentIndex + 1);
-            }else{
+            }else{ (mCurrentIndex == 0);
 
                 }
 
