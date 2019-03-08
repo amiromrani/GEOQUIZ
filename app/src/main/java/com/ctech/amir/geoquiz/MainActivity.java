@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         new Question(R.string.question_asia, true ),
     };
 
-    private int mCurrentIndex = -5;
+    private int mCurrentIndex = 0;
     private void checkAnswer (boolean userPressedTrue) {
         boolean answerIsTrue = mQuestionBank [mCurrentIndex].isAnswerTrue();
         int messageResourceId = 0;
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         }
         Toast.makeText(this, messageResourceId, Toast.LENGTH_SHORT).show();
     }
+
 
 
     public MainActivity() {
@@ -75,9 +76,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mCurrentIndex = (mCurrentIndex - 1) % mQuestionBank.length;
-                int newQuestionResourceId = mQuestionBank [mCurrentIndex].getTextRedId();
+                int newQuestionResourceId = mQuestionBank[mCurrentIndex].getTextRedId();
                 mQuestionTextView.setText(newQuestionResourceId);
                 updateQuestion();
+                if (mCurrentIndex == -1){
+                    (mCurrentIndex + 1);
+            }else{
+
+                }
+
             }
         });
 
