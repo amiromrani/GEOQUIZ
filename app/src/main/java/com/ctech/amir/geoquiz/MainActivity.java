@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
     private Button mTrueButton;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mNextButton;
     private Button mPreviousButton;
     private TextView mQuestionTextView;
+    private static final String TAG = "MainActivity";
 
     private Question [] mQuestionBank = new Question[] {
 
@@ -37,13 +39,38 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    public MainActivity() {
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart has been called!");
     }
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume has been called!");
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause has been called!");
+    }
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop has been called!");
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy has been called!");
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate(Bundle) has ben called!");
         setContentView(R.layout.activity_main);
 
         // Get a refrence to the Question Text view and set its text to the question on the current index
@@ -82,7 +109,6 @@ public class MainActivity extends AppCompatActivity {
                 if (mCurrentIndex == -1){
                     mCurrentIndex = (mCurrentIndex + 1);
             }else{
-
                 }
 
             }
