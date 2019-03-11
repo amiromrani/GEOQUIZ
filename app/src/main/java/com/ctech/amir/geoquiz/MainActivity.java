@@ -80,13 +80,14 @@ public class MainActivity extends AppCompatActivity {
                 mQuestionTextView.setText(newQuestionResourceId);
                 updateQuestion();
                 if (mCurrentIndex == -1){
-                    (mCurrentIndex + 1);
-            }else{ (mCurrentIndex == 0);
+                    mCurrentIndex = (mCurrentIndex + 1);
+            }else{
 
                 }
 
             }
         });
+
 
 
         mNextButton = findViewById(R.id.next_button);
